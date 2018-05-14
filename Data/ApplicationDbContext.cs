@@ -9,7 +9,7 @@ namespace associatetool.Data{
 
         }
         public DbSet<Tag_Address> Tag_Address{ get; set; } 
-        public DbSet<ToolTag> ToolTag{ get; set; } 
+        //public DbSet<ToolTag> ToolTag{ get; set; } 
         
     }
 }
