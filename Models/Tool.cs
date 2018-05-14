@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace associatetool.Model{
     public class Tool{
+      
         public int toolId { get; set; }     
         public string name { get; set; }                     
         public double lifeCycle { get; set; }
@@ -14,9 +15,9 @@ namespace associatetool.Model{
         public string code { get; set; }
         public int? position {get; set;}
         public int typeId { get; set; }
-        public string typeName { get; set; }
+        public string typeName { get; set; }        
         public string status { get; set; }
-        public int currentThingId { get; set; }
+        public int? currentThingId { get; set; }
         public List<string> informations { get; set; }
     }
 }
