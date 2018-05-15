@@ -46,7 +46,7 @@ namespace associatetool.Controllers{
             }
             return BadRequest(ModelState);
         }
-/*
+
         [HttpPost("tags")]
         [Produces("application/json")]
         public async Task<IActionResult> CadTags(){  
@@ -56,10 +56,10 @@ namespace associatetool.Controllers{
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); 
                 Teste teste = null;
-                for(i = 2; i<= 22; i++){
+                for(i = 2; i<= 40; i++){
                     teste = new Teste("ferramenta"+(i+3), i);
                     Console.WriteLine(teste.ToString());
-                    await client.PostAsync("http://35.170.191.75:8005/api/tool",new StringContent(JsonConvert.SerializeObject(teste), Encoding.UTF8, "application/json"));                       
+                    await client.PostAsync("http://localhost:8005/api/tool",new StringContent(JsonConvert.SerializeObject(teste), Encoding.UTF8, "application/json"));                       
                 }    
                 // t=2;    
                 // for(i = 1; i<= 92; i++)
@@ -69,7 +69,6 @@ namespace associatetool.Controllers{
                 Console.Write(i);  
             }        
             return BadRequest(ModelState);
-        }    
- */                                  
+        }                                      
     }
 }
