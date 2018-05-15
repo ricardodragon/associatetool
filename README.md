@@ -56,4 +56,4 @@ associate tool in line
 ##  Url ToolType
 api/associate
 * POST: Associate tool in position
-	* COMMENTS: If possition is null associate, if position is not null disassociate.
+	* COMENTÁRIOS: Se a posição for nula, associe-se, ou desassocie-se.
